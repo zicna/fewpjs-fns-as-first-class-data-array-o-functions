@@ -1,36 +1,35 @@
+var monday, tuesday, wednesday, thursday, friday;
+
 function runFiveMiles() {
   console.log('Go for a five-mile run');
+  return "Go for a five-mile run"
 }
 function liftWeights() {
   console.log('Pump iron');
+  return "Pump iron"
 }
 function swimFortyLaps() {
   console.log('Swim 40 laps');
+  return "Swim 40 laps"
 }
 
 function exerciseRoutine(postRunActivity) {
-  runFiveMiles();
-  postRunActivity();
+  var output = [runFiveMiles(), postRunActivity()];
+  var output1 = output[0].toString
+  var output2= output[1].toString
+  return `${output[0]} ${output[1]}`
 }
 
-const monday = function() {
-  exerciseRoutine(liftWeights);
+monday = thursday = function() {
+   exerciseRoutine(liftWeights);
 }
 
-const tuesday = function() {
+tuesday = friday = function() {
     exerciseRoutine(swimFortyLaps);
 }
 
-const wednesday = function() {
+wednesday = function() {
     exerciseRoutine(runFiveMiles);
-}
-
-const thursday = function() {
-    exerciseRoutine(liftWeights);
-}
-
-const friday = function() {
-    exerciseRoutine(swimFortyLaps);
 }
 
 const functionsArray = [monday,tuesday,wednesday,thursday,friday]
@@ -38,6 +37,6 @@ const functionsArray = [monday,tuesday,wednesday,thursday,friday]
 function printRoutine() {
     for (var value of functionsArray) {
         console.log(value.name + ":")
-        value()
+        return value()
     }
 }
