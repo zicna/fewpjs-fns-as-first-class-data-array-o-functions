@@ -14,6 +14,7 @@
 
 function wakeDog(dogName, dogBreed){
     let str = `Wake ${dogName} the ${dogBreed}`
+    return str
 }
 
 // let wakeDog2 = (dogName, dogBreed) => let str = `Wake ${dogName} the ${dogBreed}`)
