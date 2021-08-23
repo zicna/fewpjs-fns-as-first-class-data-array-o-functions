@@ -47,20 +47,23 @@ function unleashDog(dogName, dogBreed) {
 }
 
 const routine = [
-    wakeDog(), 
-    leashDog(),
-    walkToPark(),
-    throwFrisbee(),
-    walkHome(),
-    unleashDog()
+    wakeDog, 
+    leashDog,
+    walkToPark,
+    throwFrisbee,
+    walkHome,
+    unleashDog
 ]
 
 function exerciseDog(dogName, dogBreed){
     let newArray = []
     for(let i = 0; i < routine.length; i++){
-        newArray.push(routine[i])
+        // let dog = routine[i]
+        // let exercise = dog(dogName, dogBreed)
+        // newArray.push(exercise)
+        newArray.push(routine[i](dogName, dogBreed))
     }
-    console.log(str = newArray)
+    return newArray
 }
-exerciseDog("Brila", "Ovcar")
+// exerciseDog("Brila", "Ovcar")
 
