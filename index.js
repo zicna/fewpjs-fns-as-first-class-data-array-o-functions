@@ -26,7 +26,7 @@ function leashDog(dogName, dogBreed) {
 }
 
 function walkToPark(dogName, dogBreed) {
-    let str = `Walk to the park with  ${dogName} the ${dogBreed}`
+    let str = `Walk to the park with ${dogName} the ${dogBreed}`
     return str
 
 }
